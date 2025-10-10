@@ -100,6 +100,8 @@ The primary objectives of this automation are to:
 - The bot displays a clothing suggestion based on the weather analysis.
 - Action: The bot shows a message to the user with the clothing suggestion or rain gear advice.
 
+[Workflow] (https://github.com/Jerin-Abraham-George/UiPath-Projects/blob/main/Clothing-Consultant/Main%20Sequence.jpg)
+
 ---
 
 ## 📝 Sample Log Output
