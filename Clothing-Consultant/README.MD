@@ -101,9 +101,9 @@ The primary objectives of this automation are to:
 ---
 
 ## 📝 Sample Log Output
-City: New York
-Temperature: 16°C
-Weather: Clear
-Suggested Outfit: "The Temperature is 16 Degree Celsius. The weather is Clear. Bring a Light Jacket if you want"
+- City: New York
+- Temperature: 16°C
+- Weather: Clear
+- Suggested Outfit: "The Temperature is 16 Degree Celsius. The weather is Clear. Bring a Light Jacket if you want"
 
 ---
