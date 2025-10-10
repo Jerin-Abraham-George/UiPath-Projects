@@ -54,7 +54,7 @@ The primary objectives of this automation are to:
 
 ## 🔂 Workflow Breakdown
 
-1️⃣ **Input Dialog:**
+❶ **Input Dialog:**
     o	The bot starts by asking the user to input the name of a city.
     o	Action: Displays a dialog titled "Get the weather" asking for the city name.
     o	Data Capture: Saves the input value in a variable CityName.
