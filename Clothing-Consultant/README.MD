@@ -89,9 +89,9 @@ The primary objectives of this automation are to:
 
 9️⃣ **Weather Analysis:**
 - Based on the retrieved weather and temperature, the bot checks:
-•	Rain Check: If it’s raining, it assigns rain gear.
-•	Cold Weather Check: If the temperature is low, it suggests warm clothing.
-•	Hot Weather Check: If the temperature is high, it suggests lighter clothing.
+- Rain Check: If it’s raining, it assigns rain gear.
+- Cold Weather Check: If the temperature is low, it suggests warm clothing.
+- Hot Weather Check: If the temperature is high, it suggests lighter clothing.
 - Actions: Uses If-Else conditions to check these parameters and assigns relevant suggestions.
 
 🔟 **Displaying Clothing Suggestion:**
