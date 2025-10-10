@@ -4,6 +4,8 @@
 The Clothing Consultant is a lightweight UiPath automation designed to classify weather conditions based on real-time temperature data. It prompts the user for a city name, fetches current weather via the OpenWeatherMap API, and returns a simple clothing recommendation: Too Hot, Too Cold, or Moderate.
 This automation helps users make quick clothing decisions by evaluating temperature thresholds and displaying a clear message based on live weather data.
 
+https://github.com/user-attachments/assets/50dab704-5c38-4a95-b62b-77b980272859
+
 ---
 
 ## 🎯 Objectives
