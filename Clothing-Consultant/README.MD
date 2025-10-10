@@ -19,11 +19,10 @@ The primary objectives of this automation are to:
 
 ## 🌟 Key Features
 
-- 🌍 Real-time weather data retrieval for any city
-- 🌡️ Temperature-based clothing recommendations
-- ☔ Weather condition analysis (rain, cold, etc.)
-- 👕 Smart outfit suggestions based on weather conditions
-- 🤖 Automated web scraping of weather information
+-	**City Input:** Users are prompted to enter the name of a city to check the weather.
+-	**Weather Scraping:** Searches for the weather in the specified city on Google and retrieves key weather data.
+-	**Temperature-Based Suggestions:** Depending on the temperature, the bot provides a recommendation for clothing or whether to carry rain gear.
+-	**Logs:** Logs all actions including the city name, temperature, and weather conditions for debugging or reference.
 
 ---
 
