@@ -60,43 +60,43 @@ The primary objectives of this automation are to:
 - Data Capture: Saves the input value in a variable CityName.
 
 2️⃣ **Logging the City Name:**
-     - Logs the entered city name for reference.
-     - Action: Logs the city name using the Log Message activity.
+- Logs the entered city name for reference.
+- Action: Logs the city name using the Log Message activity.
 
 3️⃣  **Opening Google Search:**
-     - The bot uses the Open Browser activity to launch Google Chrome and navigate to the Google homepage.
-     - Action: The bot types the query “Weather in <CityName>” into the search bar of Google.
+- The bot uses the Open Browser activity to launch Google Chrome and navigate to the Google homepage.
+- Action: The bot types the query “Weather in <CityName>” into the search bar of Google.
 
 4️⃣ **Performing Search:**
-     - The bot sends the Enter key to execute the search for weather in the specified city.
-     - Action: Uses the Send Hotkey activity to press the Enter key.
+- The bot sends the Enter key to execute the search for weather in the specified city.
+- Action: Uses the Send Hotkey activity to press the Enter key.
 
 5️⃣ **Extracting Temperature Data:**
-     - The bot scrapes the temperature data from Google’s search result page.
-     - Action: Extracts the current temperature and stores it in the variable Temperature.
+- The bot scrapes the temperature data from Google’s search result page.
+- Action: Extracts the current temperature and stores it in the variable Temperature.
 
 6️⃣ **Logging the Temperature:**
-     - Logs the temperature for reference and debugging.
-     - Action: Logs the value of Temperature.
+- Logs the temperature for reference and debugging.
+- Action: Logs the value of Temperature.
 
 7️⃣ **Extracting Weather Data:**
-     - The bot scrapes additional weather details (like weather condition, day of the week, etc.).
-     - Action: Extracts weather details and stores them in the variable Weather.
+- The bot scrapes additional weather details (like weather condition, day of the week, etc.).
+- Action: Extracts weather details and stores them in the variable Weather.
 
 8️⃣ **Logging Weather Data:**
-     - Logs the full weather details for reference and debugging.
-     - Action: Logs the value of Weather.
+- Logs the full weather details for reference and debugging.
+- Action: Logs the value of Weather.
 
 9️⃣ **Weather Analysis:**
-     - Based on the retrieved weather and temperature, the bot checks:
-      •	Rain Check: If it’s raining, it assigns rain gear.
-      •	Cold Weather Check: If the temperature is low, it suggests warm clothing.
-      •	Hot Weather Check: If the temperature is high, it suggests lighter clothing.
-     - Actions: Uses If-Else conditions to check these parameters and assigns relevant suggestions.
+- Based on the retrieved weather and temperature, the bot checks:
+•	Rain Check: If it’s raining, it assigns rain gear.
+•	Cold Weather Check: If the temperature is low, it suggests warm clothing.
+•	Hot Weather Check: If the temperature is high, it suggests lighter clothing.
+- Actions: Uses If-Else conditions to check these parameters and assigns relevant suggestions.
 
 🔟 **Displaying Clothing Suggestion:**
-     - The bot displays a clothing suggestion based on the weather analysis.
-     - Action: The bot shows a message to the user with the clothing suggestion or rain gear advice.
+- The bot displays a clothing suggestion based on the weather analysis.
+- Action: The bot shows a message to the user with the clothing suggestion or rain gear advice.
 
 ---
 
