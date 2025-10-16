@@ -78,3 +78,8 @@ The primary objectives of this automation are to:
 
 ## 🎨 Workflow Diagram
 
+![Workflow](https://github.com/Jerin-Abraham-George/UiPath-Projects/blob/main/Real-Estate-Web-Scrapping/Main%20Sequence.jpg)
+
+---
+
+
