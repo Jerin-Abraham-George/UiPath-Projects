@@ -1,0 +1,439 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="934,6341.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="Ruston" Name="Location" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_Extract" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Get City Name From User" sap:VirtualizedContainerService.HintSize="702.4,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter US City Name" Title="Get Location" TopMost="False">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Location]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Open Zillow Website" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="702.4,6044.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" IsIncognito="True" OpenMode="Always" ScopeGuid="2aea3584-d27c-490a-b607-54b5bdd8090d" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="668.8,5804.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="StringDT" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_Filtered" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Type Location" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="635.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="2aea3584-d27c-490a-b607-54b5bdd8090d" Text="[Location + &quot;[k(Enter)]&quot;]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="zillow.com" CVScreenId="fc2e5129-6a5a-404a-b172-6b5097b2f327" ContentHash="-eYnLVWijUyO8yjC0syOqg" CvTextArea="249, 572, 469, 18" CvTextArgument="Enter an address, neighborhood, city, or ZIP code" CvType="Text" DesignTimeRectangle="230, 537, 503, 90" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='StyledFormControl-c11n-8-106-0__sc-w61kvv-0 igfrFI Input-c11n-8-106-0__sc-4ry0fw-0 ljYGJX' placeholder='Enter an address, neighborhood, city, or ZIP code' aaname='clear search text buttonSubmit Search' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7224bab1-8080-42c0-bf83-d068b5bb8f04" InformativeScreenshot="c56164ad65fe72009a0222d944214447.png" Reference="ouaPqVD6a0SmjaLLc8jA2w/0Ljp7DD9BU2PI-MkEhepgw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zillow: Real Estate, Apartments, Mortgages &amp;amp; Home Values' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="733, 537, 96, 90" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='StyledAdornment-c11n-8-106-0__sc-1h2m3pa-0 AdornmentRight-c11n-8-106-0__sc-46k37c-0 fdWxSd hGKwpM SearchBoxInput__StyledSearchBoxAdornment-sxp-sb-8-106-0__sc-1hknwe6-0 cGaWQm' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Submit Search' /&gt;" Guid="c2a2cd81-1681-4126-979b-d546323e10e6" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click For Sale" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="635.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2aea3584-d27c-490a-b607-54b5bdd8090d" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="zillow.com" CVScreenId="f257f0ac-6688-4ffb-86a7-93953b94b812" ContentHash="Wnoor553SEOwOIQxXkURyA" CvElementArea="840, 660, 258, 59" CvTextArea="930, 680, 77, 17" CvTextArgument="For sale" CvType="Button" DesignTimeRectangle="844, 662, 250, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='For sale' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='For sale' tag='BUTTON' type='' class='StyledButton-c11n-8-106-0__sc-iv7357-0 dHXgCj' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='For sale' /&gt;" Guid="9743c30e-0358-4c02-84ac-5d4c2086144e" InformativeScreenshot="00739814d2ca047bd1ddf1929d00c267.png" Reference="ouaPqVD6a0SmjaLLc8jA2w/APjdeYOL80q0sMYn2vveXw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zillow: Real Estate, Apartments, Mortgages &amp;amp; Home Values' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Home Type Button" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="635.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2aea3584-d27c-490a-b607-54b5bdd8090d" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="zillow.com/homes/6871_rid" CVScreenId="62214556-3f1c-47b9-a8b1-96aa44177eae" ContentHash="cbxFjapnn0CE34G7QQf4LQ" CvElementArea="1313, 227, 192, 50" CvTextArea="1344, 244, 100, 20" CvTextArgument="Home Type" CvType="Button" DesignTimeRectangle="1315, 228, 188, 46" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='home-type' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='home-type' tag='BUTTON' type='' class='StyledButton-c11n-8-109-3__sc-iv7357-0 dyEhmA DropdownButton-c11n-8-109-3__sc-1nhw8sf-0 dialog__StyledDropdownButton-srp-8-109-3__sc-mwkiy1-3 jkBqil lcsgsO DropdownPopper-c11n-8-109-3__sc-u1wzgh-0 kmoYuo' aaname='Home Type' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Home Type' /&gt;" Guid="ce37b5f9-95df-4d7d-ac51-aac3957650e0" InformativeScreenshot="d82427f3ac900b117588ad294f652501.png" Reference="ouaPqVD6a0SmjaLLc8jA2w/LCTR6BZI4UiRU3oMPrUjgA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ruston LA Real Estate - Ruston LA Homes For Sale | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Deselect All Button Checkmark" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="635.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2aea3584-d27c-490a-b607-54b5bdd8090d" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="zillow.com/homes/6871_rid" CVScreenId="d81a45e5-748f-4cf6-b07f-0b812b18114b" ContentHash="moi0Wd3Xv0OFe-RyOSFzBw" CvTextArea="1374, 350, 103, 17" CvTextArgument="Deselect All" CvType="Text" DesignTimeRectangle="1335, 344, 142, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*Deselect All*' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='*Deselect All*' tag='BUTTON' type='button' class='StyledTextButton-c11n-8-109-3__sc-1nwmfqo-0 fVlvPS' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:text='Deselect All' /&gt;" Guid="594adb81-f9bb-4a45-9e9e-c7d5f913bed8" InformativeScreenshot="b003375e1b660332c7dd0deed0fee795.png" Reference="ouaPqVD6a0SmjaLLc8jA2w/WFlKxBnjdkGW73pRe6mDQQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ruston LA Real Estate - Ruston LA Homes For Sale | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Houses'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="635.2,196" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="2aea3584-d27c-490a-b607-54b5bdd8090d" Version="V5">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="zillow.com/ruston-la" CVScreenId="3f632e31-9139-42a6-aa3d-31698680ce9b" ContentHash="K_4ZHwGglkCph8dIddfOYw" CvElementArea="1335, 407, 29, 29" CvType="CheckBox" DesignTimeRectangle="1338, 409, 25, 25" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='home-type_isSingleFamily' tag='INPUT' aaname='Houses ' /&gt;" FuzzySelectorArgument="&lt;webctrl id='home-type_isSingleFamily' tag='INPUT' aaname='Houses ' type='checkbox' class='StyledFormControl-c11n-8-109-3__sc-w61kvv-0 iVoxNw StyledCheckbox-c11n-8-109-3__sc-13jdanj-0 vmLum StyledFilterCheckbox__StyledCheckbox-srp-8-109-3__sc-aeuain-1 cNgYDk' matching:id='fuzzy' fuzzylevel:id='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="30c6df65-8788-4abd-aaf4-56e49b6b3104" InformativeScreenshot="a615bf35b8fa9cd17e00ee0d7cba9af1.png" Reference="ouaPqVD6a0SmjaLLc8jA2w/fBixS5GjPEeiY2iOWo8qXA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ruston LA Real Estate - Ruston LA Homes For Sale | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3f632e31-9139-42a6-aa3d-31698680ce9b" CvTextArea="1371, 410, 71, 17" CvTextArgument="Houses" CvType="Text" DesignTimeRectangle="1363, 404, 84, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Houses ' tag='LABEL' type='' class='StyledLabel-c11n-8-109-3__sc-14wqmdp-0 jmZqPk short-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Houses' /&gt;" Guid="c4abf4e7-bd11-42eb-a8fb-46e5043b247f" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Apply" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="635.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2aea3584-d27c-490a-b607-54b5bdd8090d" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="zillow.com/ruston-la/houses" CVScreenId="72873d0b-3573-4dc1-b996-2bcec69c147f" ContentHash="8q3CPENOVkiI3ajxAblhmg" CvElementArea="1333, 835, 226, 58" CvTextArea="1415, 854, 61, 25" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="0, 0, 0, 0" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='home-type' tag='BUTTON' /&gt;&lt;nav up='1' /&gt;&lt;webctrl aaname='Apply' parentid='home-type' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apply' parentid='home-type' tag='BUTTON' type='' class='StyledButton-c11n-8-109-3__sc-iv7357-0 eFeCOZ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Apply' /&gt;" Guid="17186153-786a-4521-a8aa-f905e7948dec" InformativeScreenshot="4222f73227ac6afbe0383ff646ef47d0.png" Reference="ouaPqVD6a0SmjaLLc8jA2w/LmGIdoWhdUSnp6tCiFpQrA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ruston LA Single Family Homes For Sale - 167 Homes | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Extract]" DisplayName="Extract Property Details" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Price'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='NumberColumnFormat' DecimalSeparator='.' ThousandsSeparator=',' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Beds'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='NumberColumnFormat' DecimalSeparator='.' ThousandsSeparator=',' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Baths'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='NumberColumnFormat' DecimalSeparator='.' ThousandsSeparator=',' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Sq Ft.'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='NumberColumnFormat' DecimalSeparator='.' ThousandsSeparator=',' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='Full Address'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column6' Name='Listing URL'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext' name2='Column6' attr2='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='address' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="635.2,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="DebuggerApi" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="2aea3584-d27c-490a-b607-54b5bdd8090d" Version="V5">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="zillow.com/ruston-la/houses" CVScreenId="d4a1f581-4045-47e2-8101-76f7ffe89e2e" CvElementArea="1624, 508, 27, 31" CvType="ArrowButton" DesignTimeRectangle="1611, 495, 55, 55" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Next page' parentid='grid-search-results' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Next page' parentid='grid-search-results' tag='A' type='' class='StyledButton-c11n-8-109-3__sc-iv7357-0 jRehVC PaginationButton-c11n-8-109-3__sc-1i6hxyy-0 dmzPQJ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="a3bb0325-4937-4116-bcd8-b4a8afaba377" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ruston LA Single Family Homes For Sale - 168 Homes | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset X="0" Y="0" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/ruston-la/houses/?searchQueryState=%7B%22pagination%22%3A%7B%7D%2C%22isMapVisible%22%3Atrue%2C%22mapBounds%22%3A%7B%22west%22%3A-92.91701868457031%2C%22east%22%3A-92.37731531542968%2C%22south%22%3A32.29802017721823%2C%22north%22%3A32.698192793350344%7D%2C%22regionSelection%22%3A%5B%7B%22regionId%22%3A6871%2C%22regionType%22%3A6%7D%5D%2C%22filterState%22%3A%7B%22sort%22%3A%7B%22value%22%3A%22globalrelevanceex%22%7D%2C%22tow%22%3A%7B%22value%22%3Afalse%7D%2C%22mf%22%3A%7B%22value%22%3Afalse%7D%2C%22con%22%3A%7B%22value%22%3Afalse%7D%2C%22land%22%3A%7B%22value%22%3Afalse%7D%2C%22apa%22%3A%7B%22value%22%3Afalse%7D%2C%22manu%22%3A%7B%22value%22%3Afalse%7D%2C%22apco%22%3A%7B%22value%22%3Afalse%7D%7D%2C%22isListVisible%22%3Atrue%2C%22mapZoom%22%3A11%2C%22usersSearchTerm%22%3A%22Ruston%20LA%22%7D" DesignTimeRectangle="992, 407, 918, 7828" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='grid-search-results' tag='UL' /&gt;" Guid="7a81ab02-e6dd-4f58-ab41-7f6d1d0234f9" InformativeScreenshot="3c133c91d7a51bd1a562ad75e3d68ecc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ruston LA Single Family Homes For Sale - 168 Homes | Zillow' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:FilterDataTable DataTable="[dt_Extract]" DisplayName="Filter Extracted Property Details" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="635.2,194.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_Filtered]" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="8">
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["Price"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                  <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["Beds"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:Int32">[1]</InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                  <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["Baths"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:Int32">[1]</InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="Or" Operator="EMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["Sq Ft."]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["Full Address"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["Listing URL"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:OutputDataTable DataTable="[dt_Filtered]" DisplayName="Output Filtered Data Table" sap:VirtualizedContainerService.HintSize="635.2,112.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[StringDT]" />
+            <ui:LogMessage DisplayName="Log String Data Table" sap:VirtualizedContainerService.HintSize="635.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[StringDT]" />
+            <ui:LogMessage DisplayName="Log Row Count Message" sap:VirtualizedContainerService.HintSize="635.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[dt_Filtered.RowCount.ToString]" />
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Creation" sap:VirtualizedContainerService.HintSize="635.2,3509.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,3398.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use PropertyListing Excel File" sap:VirtualizedContainerService.HintSize="568,3338.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="DisplayValue" ResizeWindow="Maximize" SensitivityOperation="None" WorkbookPath="Property Listing.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Prepare Excel Sheet" sap:VirtualizedContainerService.HintSize="534.4,3045.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:DeleteSheetX DisplayName="Delete Locaion Sheet" sap:VirtualizedContainerService.HintSize="500.8,122.4" sap2010:WorkflowViewState.IdRef="DeleteSheetX_1" Sheet="[Excel.Sheet(Location.ToUpper)]" />
+                            <ueab:WriteRangeX Destination="[Excel.Sheet(Location.ToUpper)]" DisplayName="Write dt_Filtered to Excel" sap:VirtualizedContainerService.HintSize="500.8,192" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="True" Source="[dt_Filtered]" />
+                            <ueab:InsertColumnX DisplayName="Insert Street Address" HasHeaders="True" sap:VirtualizedContainerService.HintSize="500.8,242.4" sap2010:WorkflowViewState.IdRef="InsertColumnX_1" NewColumnName="Street Address" Range="[Excel.Sheet(Location.ToUpper)]" RelativeColumnName="Full Address" RelativePosition="After">
+                              <ueab:InsertColumnX.ColumnFormat>
+                                <ueab:TextFormat />
+                              </ueab:InsertColumnX.ColumnFormat>
+                            </ueab:InsertColumnX>
+                            <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert City" HasHeaders="True" sap:VirtualizedContainerService.HintSize="500.8,242.4" sap2010:WorkflowViewState.IdRef="InsertColumnX_2" NewColumnName="City" Range="[Excel.Sheet(Location.ToUpper)]" RelativeColumnName="Street Address" RelativePosition="After" />
+                            <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Zip Code" HasHeaders="True" sap:VirtualizedContainerService.HintSize="500.8,242.4" sap2010:WorkflowViewState.IdRef="InsertColumnX_4" NewColumnName="Zip" Range="[Excel.Sheet(Location.ToUpper)]" RelativeColumnName="City" RelativePosition="After" />
+                            <ueab:InsertColumnX DisplayName="Insert Price Per Sqft Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="500.8,242.4" sap2010:WorkflowViewState.IdRef="InsertColumnX_5" NewColumnName="Price per Sq. Ft" Range="[Excel.Sheet(Location.ToUpper)]" RelativeColumnName="Sq Ft." RelativePosition="After">
+                              <ueab:InsertColumnX.ColumnFormat>
+                                <ueab:NumberFormat DecimalPlaces="0" UseThousandSeparator="True" />
+                              </ueab:InsertColumnX.ColumnFormat>
+                            </ueab:InsertColumnX>
+                            <ueab:ExcelForEachRowX DisplayName="Looping Through Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="500.8,1044" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(Location.ToUpper)]" SaveAfterEachRow="True">
+                              <ueab:ExcelForEachRowX.Body>
+                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,819.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:WriteCellX Cell="[CurrentRow(&quot;Street Address&quot;)]" DisplayName="Write Street Address To Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[CurrentRow(&quot;Full Address&quot;).ToString.Split(&quot;,&quot;c)(0)]" />
+                                    <ueab:WriteCellX Cell="[CurrentRow(&quot;City&quot;)]" DisplayName="Write City To Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[CurrentRow(&quot;Full Address&quot;).ToString.Split(&quot;,&quot;c)(1).Trim]" />
+                                    <ueab:WriteCellX Cell="[CurrentRow(&quot;Zip&quot;)]" DisplayName="Write Zip Code To Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[If(CurrentRow(&quot;Full Address&quot;).ToString.Split(&quot;,&quot;c).Length &gt; 2, CurrentRow(&quot;Full Address&quot;).ToString.Split(&quot;,&quot;c)(2).Trim.Split(&quot; &quot;c)(1).Trim, &quot;&quot;)]" />
+                                    <ueab:WriteCellX Cell="[CurrentRow(&quot;Price per Sq. Ft&quot;)]" DisplayName="Write Price per Sq. Ft To Cell" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[CurrentRow(&quot;Price&quot;)/CurrentRow(&quot;Sq Ft.&quot;)]" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelForEachRowX.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ueab:ExcelForEachRowX>
+                            <ueab:FormatRangeX DisplayName="Format Zip Code Cells To Number" sap:VirtualizedContainerService.HintSize="500.8,171.2" sap2010:WorkflowViewState.IdRef="FormatRangeX_1" Range="[Excel.Sheet(Location.ToUpper).Range(&quot;I:I&quot;)]">
+                              <ueab:FormatRangeX.Alignment>
+                                <ui:AlignmentOptions HorizontalAlignment="xlHAlignGeneral" VerticalAlignment="xlVAlignBottom" WrapText="False" />
+                              </ueab:FormatRangeX.Alignment>
+                              <ueab:FormatRangeX.Font>
+                                <ui:FontOptions Color="Black" FillColor="Transparent" FontFamilyName="Calibri" Size="11" Style="Regular" UnderlineStyle="None" />
+                              </ueab:FormatRangeX.Font>
+                              <ueab:FormatRangeX.Format>
+                                <ueab:NumberFormat DecimalPlaces="0" UseThousandSeparator="False" />
+                              </ueab:FormatRangeX.Format>
+                            </ueab:FormatRangeX>
+                            <ueab:DeleteColumnX ColumnName="Full Address" DisplayName="Delete Full Address Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="500.8,193.6" sap2010:WorkflowViewState.IdRef="DeleteColumnX_1" Range="[Excel.Sheet(Location.ToUpper)]" />
+                            <ueab:SortX DisplayName="Sort Range By Price per Sq. Ft" HasHeaders="True" sap:VirtualizedContainerService.HintSize="500.8,244.8" sap2010:WorkflowViewState.IdRef="SortX_2" Range="[Excel.Sheet(Location.ToUpper)]">
+                              <ueab:SortX.Body>
+                                <ActivityAction>
+                                  <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:SortColumnX ColumnName="Price per Sq. Ft" DisplayName="Sort Range By Price per Sq. Ft Column" sap:VirtualizedContainerService.HintSize="382.4,72" sap2010:WorkflowViewState.IdRef="SortColumnX_3" SortDirection="Ascending" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:SortX.Body>
+                            </ueab:SortX>
+                            <ui:CommentOut DisplayName="Comment Out Sorting By Beds And Baths" sap:VirtualizedContainerService.HintSize="500.8,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="467.2,368" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ueab:SortX DisplayName="Sort Range By Beds Then Baths" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,308" sap2010:WorkflowViewState.IdRef="SortX_1" Range="[Excel.Sheet(Location.ToUpper)]">
+                                    <ueab:SortX.Body>
+                                      <ActivityAction>
+                                        <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:SortColumnX ColumnName="Beds" DisplayName="Sort By Beds Column" sap:VirtualizedContainerService.HintSize="382.4,72" sap2010:WorkflowViewState.IdRef="SortColumnX_1" SortDirection="Ascending" />
+                                          <ueab:SortColumnX ColumnName="Baths" DisplayName="Sort By Baths Column" sap:VirtualizedContainerService.HintSize="382.4,72" sap2010:WorkflowViewState.IdRef="SortColumnX_2" SortDirection="Ascending" />
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ueab:SortX.Body>
+                                  </ueab:SortX>
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CommentOut>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1158" BrowserType="Chrome" ContentHash="s7ik6kIAKkKdTSEOWiJDHg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVySURBVFhHzZd7bJNVGMZ/bbe1Y7cyGIjIYGMbA1FgBFwEQgVGhSEZkxFhG8rYpf0uE1QUYozhohENCyAxiCYmmEAc/kMcGCFqEIcSFSMKKuBwahSIMzAYjsL2mu8rG7T9BgPB+CTPHz3nPe/znsv3nFO4GfS4A+YcSEeTTWjyOnMOpJlt/wniU6OY+cFYtLYdKHIBRVrR2urMNqPvtiG2L2QUxZFfNwdNDqCIhFCTr8ivKzJjjNhbCldvmLK5L9WyDFUaI8Q7aPRVyzNM2dzHHHNLEJMEeVuy0OVNFDkTIRrJ0+iyyRxjjP1XiI5z4N3mQZXdKHLRQqwrBlBlF95tE4mOs4envT7sUeB53UXR/jIUOWQh0F0eomj/o2YuI2e3EBVrw7MxBSXwIpqcsEh6PbZfZvC3Jn+gBFbh2diLqNhwtatgdCZlOJiwYRhKYAuKtFgk75qaNKPJL6iyB1W+CduyFpTA20zYkE1Shj2yEKNh9DIn/tap+C/tQZG2CAFrnkWXI1T9XUdh/RMU1o+i4JNYZu3NoaL507A8bfgvfURV6xRyljqvFBGdADnLeqJKFYr8YCESSU2Oo8sOVHmW/O253LfSGTYlmP2FF00Oh2xHkIdRpZycZW5TG3e2E3/bQhRpihAKZQua1FMta8jfOZNxNcnctzx4YK0wXIWFfyldbOUp/G2luLNjwD0kiarWVy2CrgTr8g7qxUpmvHsvIxZHkTAoXC4Sw/0DKf9r/WW7Ds8pVLW+gntIQkcBayMCFGlAlbUsODGdzLn9SZ8JSQPCZSKRPR+m146kvLkWVVot8nYU8JJVAZdQ5Ai+i8upODuGjCI3KaNCBRxOGw6nA8+mWB7a5SIm0Wa22+yQVWyn/MQEquVD1OsYV0gBvsAafNJA2fnlVDQNZ1hlHImDr4jaHOBKtjNU6UHx0aGUHNMp+3MepT8n4OwZ7M8oclDRNBlVPr88kUjRjkmqch5fYAXuIfGQmN6D4sOT8PwwEteTLlzJwdkYiE81vCGK9MI+LGyaROX5N9DkO8pOPUd/TwrOnjZTPK3AQeXZPFT50uITbkeTs6YhaXKQsqatFB99irmH7iEx3WFMDxwxduzO4FIaSMqE/h4nxUezqGotwRcw7n4jSROPNT7PgKlGlcHYtFl2Kls8KPJVyCw1OYku3+K/tJ3CfUsprJ/I7PpeZBVHm1voiLF15uhEYpqxlD14+LMx6LIERfZ1OpomZ5jfsJKB+clmrLFKGbOh4tx4FPkSVQRdfkWXPejyGgUfz+fB2iGMX+8wV+maMO7uEYtdTH9vItXyIqocDDEQVc5R8mMNg2akdI6x2WyUNIxEk608LrspPf4y42qKGFeTyv01EHdXiETXiO3jIG/LKHRZi2Z5812gWt7iwW13hozLedqBr2Ui5aeLyFmSSeq08PW8Nu72Bd+WuLPj8bcvtzg8HSf2fYp/zOSO3NAEqV4bmXNiSfWGtneFvrk2ptX2x1s7DW/tEhacmkHPYa4OH1hnId5u3mqlDaPpHeYF14ItyvAKO9HxUXhrEyisH0Nh/SKKj7yDLl+jSyO6nMF34QUrI7qK7ScpbSyg1/DrnSBwJgZ9wpUcy9gVKZQezaPk2Gr8bfvQ5DfzAKthK9yFE14dsIreI4zryhquXphm1S83nnl7B1DW5KWsaQ1VrQdRpRnVvAPCb8IbKMAXWE36LHe4rmlO/e6PZkptKhXnHjCXUmk3DOj8ZQfsWvSGCjBewBXnqhk8O8YUDv4vSGR6XS66LEKRnSjSbDGue+xGAcb3/zvlpx9hxOI+TN48k2pZhyrfR8TdDLtVQJA/ocu75nsvsu/meQMF3B7+XwvoeNPfbnYW8A/zBWIeFBGfaAAAAABJRU5ErkJggg==" InformativeScreenshot="76bd1276dc265921a91bd6e4a5491113.jpg" Reference="ouaPqVD6a0SmjaLLc8jA2w/WbkztKI9s0WLkaWIVlWJcw" Selector="&lt;html app='chrome.exe' title='*Zillow*' /&gt;" Url="https://www.zillow.com/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
