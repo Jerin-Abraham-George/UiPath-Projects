@@ -3,6 +3,8 @@
 ## 📌 Overview
 The Real Estate Web Scraper is a UiPath automation solution designed to scrape real estate property listings from a zillow.com. The bot extracts important property details like price, location, type, and description from each listing. The collected data is then exported into an Excel file for further analysis or reporting. The automation also handles pagination, allowing it to scrape data from multiple pages of listings.
 
+https://github.com/user-attachments/assets/9da3be78-2a43-4887-9bd5-4b50d9e1087a
+
 ---
 
 ## 🎯 Objectives
