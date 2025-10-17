@@ -5,6 +5,8 @@ This UiPath workflow automates the extraction of structured invoice data from a 
 
 Whether you're processing a handful of invoices or scaling to hundreds, this automation ensures consistent output and seamless integration with your broader analytics or audit workflows.
 
+https://github.com/user-attachments/assets/800a354c-eb2f-4f4e-8c08-4342883be3b0
+
 ---
 
 ## 🎯 Objectives
