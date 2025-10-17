@@ -89,3 +89,9 @@ The automation generates a structured Excel file containing invoice metadata ext
 > Note: This workflow currently runs in **attended mode** via UiPath Studio. For full automation, consider deploying it through **UiPath Orchestrator** with scheduling and exception handling.
 
 ---
+
+## 🎨 Workflow Diagram
+
+![Workflow Diagram](https://github.com/Jerin-Abraham-George/UiPath-Projects/blob/main/PDF-Data-Extraction/Main%20Sequence.jpg)
+
+---
