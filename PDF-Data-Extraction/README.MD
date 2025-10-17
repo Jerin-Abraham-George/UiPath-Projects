@@ -66,20 +66,22 @@ Outputs the final data table to Exce
 
 ## 📊 Result
 
-The automation produces a structured Excel file containing key invoice metadata extracted from all PDFs in the target folder. Each row in the output represents one invoice, with the following columns:
+The automation generates a structured Excel file containing invoice metadata extracted from all PDFs in the target folder. Each row represents one invoice, with the following columns:
 
-| Invoice Number | Invoice Date | Total Amount |
-|----------------|--------------|--------------|
-| 10234          | 15/09/2025   | 1,250.00     |
-| 10235          | 16/09/2025   | 980.50       |
-| ...            | ...          | ...          |
+| Invoice Number | Invoice Date | Due Date   | Total    |
+|----------------|--------------|------------|----------|
+| 38114          | 21/07/2016   | 30/07/2016 | $50.00   |
+| 11222          | 21/07/2020   | 12/08/2016 | $4130.00 |
+| 45321          | 05/02/2019   | 25/02/2019 | $80.00   |
+| 54321          | 05/12/2017   | 30/01/2018 | $30.00   |
+| 43214          | 21/09/2020   | 12/10/2020 | $2110.00 |
 
 ### ✅ Output Highlights
-- Consistent formatting across all entries  
-- Accurate extraction using Regex, even from scanned PDFs  
-- Minimal manual effort — just one click to run  
-- Compatible with downstream reporting tools like Power BI or Excel dashboards
+- Clean tabular format ready for analysis or reporting  
+- Extracts all key fields using Regex: `Invoice Number`, `Invoice Date`, `Due Date`, and `Total`  
+- Handles both scanned and native PDFs with fallback OCR logic  
+- Ideal for financial audits, dashboard integration, or archival
 
-> Note: This workflow is designed for **attended execution** via UiPath Studio. To make it fully unattended, consider deploying it through **UiPath Orchestrator** with proper scheduling and exception handling.
+> Note: This workflow currently runs in **attended mode** via UiPath Studio. For full automation, consider deploying it through **UiPath Orchestrator** with scheduling and exception handling.
 
 ---
