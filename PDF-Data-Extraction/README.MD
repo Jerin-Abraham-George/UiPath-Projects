@@ -3,7 +3,7 @@
 ## 🧭 Overview
 This UiPath automation extracts structured data from a folder of PDF invoices and writes the results into an Excel file. It intelligently handles both native and scanned PDFs using OCR when necessary.
 
---
+---
 
 ## 🎯 Objectives
 - Automate extraction of invoice data from PDFs  
@@ -20,7 +20,7 @@ This UiPath automation extracts structured data from a folder of PDF invoices an
 - ✅ Real-time logging for process transparency  
 - ✅ Consolidated output in Excel format
 
---
+---
 
 
 ## 🛠️ Tools & Technologies
@@ -30,7 +30,7 @@ This UiPath automation extracts structured data from a folder of PDF invoices an
 - Tesseract OCR Engine  
 - Regular Expressions (`System.Text.RegularExpressions`)
 
---
+---
 
 
 ## 🔄 Workflow Model/Structure
@@ -56,5 +56,5 @@ This UiPath automation extracts structured data from a folder of PDF invoices an
   strInvoiceDate = System.Text.RegularExpressions.Regex.Match(strPDFText, "Invoice Date: (\d{2}/\d{2}/\d{4})").Groups(1).Value  
   strInvoiceTotal = System.Text.RegularExpressions.Regex.Match(strPDFText, "Total Amount: (\d+\.\d{2})").Groups(1).Value  
 
---
+---
 
