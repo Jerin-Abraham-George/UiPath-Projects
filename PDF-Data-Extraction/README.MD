@@ -1,7 +1,9 @@
 # 📄 PDF Data Extraction
 
 ## 🧭 Overview
-This UiPath automation extracts structured data from a folder of PDF invoices and writes the results into an Excel file. It intelligently handles both native and scanned PDFs using OCR when necessary.
+This UiPath workflow automates the extraction of structured invoice data from a folder of PDF files and consolidates it into a clean Excel report. It intelligently distinguishes between native and scanned PDFs, applying OCR only when necessary, and uses regular expressions to pinpoint key financial fields. Designed for reliability and scalability, this solution eliminates manual data entry, reduces errors, and accelerates downstream reporting.
+
+Whether you're processing a handful of invoices or scaling to hundreds, this automation ensures consistent output and seamless integration with your broader analytics or audit workflows.
 
 ---
 
