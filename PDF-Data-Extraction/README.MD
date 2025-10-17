@@ -12,7 +12,7 @@ Whether you're processing a handful of invoices or scaling to hundreds, this aut
 - Handle both scanned and native PDFs with conditional logic  
 - Export extracted data to a structured Excel sheet
 
---
+---
 
 
 ## ✨ Key Features
